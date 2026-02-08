@@ -1,0 +1,342 @@
+
+/*NAVBAR*/
+
+html {
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.navlogo {
+    display:flex;
+    margin-left:25px;
+}
+
+.logo {
+    display:flex;
+    width:200px;
+    height:auto;    
+}
+
+.navheading {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:50px;
+}
+
+.navbar-headings {
+    color:white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style:normal ;
+    text-transform:uppercase;
+    padding:20px;
+
+    
+}
+
+.navbar-headings:hover {
+    opacity:70%;
+    border-bottom: 2.5px solid white;
+}
+
+.navbar-book {
+    color:black;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style:normal ;
+    text-transform:uppercase;
+    display:inline-block;
+    padding: 14px 26px;
+    border:solid 2px white;
+    background-color: white;
+    margin-left:30px;
+
+}
+
+.navbar-book:hover {
+    opacity:70%
+}
+
+
+/*NAVBAR DROPDOWN */
+.navdropdown { 
+  position: relative; 
+}
+
+/* hide by default */
+.navdropdown__menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  display: none;           /* hidden initially */
+  flex-direction: column;
+
+  min-width: 150px;
+  background: black;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* links inside menu */
+.navdropdown__menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 200;
+}
+
+.navdropdown__menu a:hover {
+  opacity: 0.7;
+}
+
+/* when dropdown is open */
+.navdropdown.is-open .navdropdown__menu {
+  display: flex;
+}
+
+/* make the button look like your nav links (remove default button styles) */
+.navdropdown__btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.navdropdown__menu { display: none; }
+
+.navdropdown:hover .navdropdown__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navdropdown:focus-within .navdropdown__menu {
+  display: flex;
+}
+
+.navdropdown__btn {
+  all: unset;        /* removes default button styles */
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.navdropdown_text {
+    color:white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style:normal ;
+    text-transform:uppercase;
+    padding:20px;
+}
+
+
+/* MID SECTION */ 
+
+.midsection {
+    display:flex;
+    flex-direction: row;
+    height:80vh;
+    width:auto;
+    
+    
+}
+
+.midleft {
+    display:flex;
+    background-color: red;
+    flex:1;
+  
+}
+
+.midleft img{
+    height:100%;
+ 
+   
+    
+}
+
+.midimg {
+    height:100%
+
+}
+
+.mid-image {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+    
+.midright {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    flex-wrap: nowrap;
+    
+
+}
+
+.midsectiontext {
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style:normal;
+    font-size:50px;
+    text-align: center;
+}
+
+.midsectiontext h3{
+    text-transform:uppercase;
+    font-weight: 300;
+}
+
+
+.midbook {
+    align-self:center;
+    margin-top: 20px;
+}
+
+.mid-booknow {
+    color:black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style:normal ;
+    text-transform:uppercase;
+    font-size:30px;
+    text-decoration: none;
+    display:inline-block;
+    padding: 14px 26px;
+    border:solid 2px white;
+    background-color: white;
+
+}
+
+.mid-booknow:hover {
+    opacity:70%
+}
+
+
+/*UNDER MID MSG*/
+
+.undermid {
+    display:flex;
+    justify-content: center;
+    border-top: solid 2.5px white;
+    border-bottom: solid 2.5px white;
+    
+
+}
+
+.undermid-msg {
+    display: flex;
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style:normal;
+    font-size:50px;
+    text-align: center;
+    
+}
+
+/*GALLERY*/
+
+
+.gallery-grid {
+    display:grid; 
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    padding: 60px 40px;
+    width:90%
+    
+}
+
+
+.gallerypics {
+    width:100%
+}
+
+.gallery-item {
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    
+}
+
+.gallery-headings {
+    text-decoration: none;
+    color:black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style:normal ;
+    text-transform:uppercase;
+    font-size:20px;
+    text-decoration: none;
+    padding: 14px 26px;
+    border:solid 2px white;
+    background-color: white;
+    text-align: center;
+    align-self:center;
+}
+
+.gallery-item:hover{
+    opacity:70%
+}
+
+/*INFOBAR*/
+
+.infocontainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top:1px solid white;
+}
+
+.infoblock{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style:normal ;
+    text-transform:uppercase;
+    font-size:2em
+}
+
+.infoblock a{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style:normal ;
+    text-transform:uppercase
+}
+
+.infoblock a:hover{
+    opacity:70%
+}
